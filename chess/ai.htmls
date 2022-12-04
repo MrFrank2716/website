@@ -1,0 +1,9 @@
+<div id="tiles"></div>
+
+<h1 id="title" class="centered">
+  The name of the game is
+  <span class="fancy">Chess</span>.
+</h1>
+
+<i id="icon" class="fa-solid fa-chess centered"></i>
+

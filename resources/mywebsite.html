@@ -1,0 +1,68 @@
+<!DOCTYPE = html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Types of <strong>Trees</strong> by big filip 😎😎😎</h1>
+        <hr />
+        <p>
+            A tree is a <strong>linked non-linear data structure</strong>. To briefly explain it, a <strong>tree</strong> is a structure consisting of a single node which is called the root node and zero or more subtrees (which I will explain later)
+
+            Trees will have the following generic properties:
+            - A node which is distinguished as the root node, it is the very start of the tree and all nodes will have to somehow be linked to it (usually through other nodes and edges)
+            - Nodes are connected by edges 
+            - Every node excluding the root will be connected by a directed edge from exactly one other node in the direction parent - child
+        </p>
+        <img src = "tree_example.png" class="center"/>
+        <p>
+            In the above tree, the root tree has 2 sub-trees. The root node can have loads of sub-trees. 
+
+            Nodes with no children or sub-trees are called <strong>external nodes</strong>, or <strong>external nodes</strong>. In the above picture, 2, 10, 5, 11, and 4 are LEAVES or EXTERAL NODES. 
+
+            
+        </p>
+        <h2>
+                General Trees
+        </h2>
+        <hr />
+        <p>
+            General trees will have an unlimited value of sub-trees and child nodes. 
+        </p>
+        <img src = "generaltree.PNG"
+        width = "325"
+        height = "210"
+        class="center"
+        />
+        <p>
+            The tree can then be accessed using traversal algorithms.
+        </p>
+        <h2>
+            <strong>Binary Trees</strong>
+        </h2>
+        <hr />
+        <p>Binary Trees are a type of <strong>tree</strong> where each node has <strong>a maximum of two children</strong>. These are used to represent information
+        for <strong>binary searches</strong>, as information in these trees is easy to search through. The most common way to represent a binary tree is storing
+        each node with a <strong>left pointer</strong> and a <strong>right pointer</strong>. This information is usually implemented using two-dimensional arrays. </p>
+        <img src = "binary_tree_example.PNG" class="center"/>
+        
+        <p><span style="text-decoration: underline;">Traversing Binary Trees</span></p>
+        <p>There is three main ways to traverse binary trees, <strong>pre-order</strong>, <strong>in-order</strong>, <strong>post-order</strong>.</p>
+        <p><span style="text-decoration: underline;">Pre-Order Traversal</span></p>
+        <img src = "binary_tree_traversal_pre_order.PNG" class="center">
+        <p>Pre-order traversals follow the order: root node, left subree, then right subtree.
+            Using the outline method, nodes are traversed in the order in which you pass them on the left, beggining at the left-hand side of the root node.
+            The order for this traversal is: 15, 9, 5, 7, 11, 10, 12, 20, 25, 34
+        </p>
+
+        <p><span style="text-decoration: underline;">In-Order Traversal</span></p>
+        <p>In-order traversal follows the order: left subtree, root node, right subtree.</p>
+        <img src = "binary_tree_traversal_in_order.PNG" class="center">
+        <p>The order for this tree would be: 7, 5, 10, 12, 11, 9, 34, 25, 20, 15</p>
+
+        <p><span style = "text-decoration: underline;">Post-Order Traversal</span></p>
+        <p>Post order traversal follows the order of left subtree, right subtree, root node.</p>
+        <img src = "binary_tree_traversal_post_order.PNG" class="center"/>
+        <p>Order for this tree: 7, 5, 10, 12, 11, 9, 34, 25, 20, 15</p>
+    </body>
+</html>

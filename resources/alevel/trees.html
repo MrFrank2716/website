@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style>
+		/* unvisited link */
+		a:link {
+		  color: rgb(176, 69, 69);
+		}
+		
+		/* visited link */
+		a:visited {
+		  color: rgb(103, 143, 10);
+		}
+		
+		/* mouse over link */
+		a:hover {
+		  color: rgb(119, 10, 156);
+		}
+		
+		/* selected link */
+		a:active {
+		  color: rgb(18, 197, 164);
+		}
+		</style>
+	<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px", style="text-align:center;"><img alt="traversals" src="https://static.wikia.nocookie.net/fanontubbies/images/3/3c/FePKCY_WQAIMK_P.jpg" height=500px ></span></span></p>
+
+		TREES ARE LIKE THE WISE OLD MYSTICAL TREE
+    
+	<p style="text-align:center"><u><span style="font-size:30px"><span style="font-family:Verdana,Geneva,sans-serif">Trees</span></span></u></p>
+
+    <p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">A&nbsp;<strong>tree</strong>&nbsp;is a connected, undirected graph with no cycles. Recall that a cycle is a path that starts and ends at the same node. In a tree, there are no cycles, which means that there is only one possible path between any two nodes.&nbsp;<strong>Connected</strong>&nbsp;means that there is a path from any node to any other node, and there is no node, or set of nodes, that is disconnected from the others.&nbsp;<strong>Undirected</strong>&nbsp;means that there is no direction associated with an edge.</span></span></p>
+    
+    <p>&nbsp;</p>
+    
+    <p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Trees introduce another set of <strong>terminology</strong>:</span></span></p>
+    
+    <ul>
+        <li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">The&nbsp;<strong>root</strong>&nbsp;of a tree is the start node for traversals. If the tree has a root, it is called a&nbsp;<strong>rooted tree</strong>.</span></span></li>
+        <li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">A&nbsp;<strong>branch</strong>&nbsp;is a path from the root to an end point. The end point is called a&nbsp;<strong>leaf</strong>.</span></span></li>
+        <li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">The&nbsp;<strong>height</strong>&nbsp;of a tree is equal to the number of edges that connect the root node to the leaf node that is furthest away from it (i.e. the longest branch).</span></span></li>
+    </ul>
+    
+    <p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">The number of edges&nbsp;<strong><em>(E)</em></strong>&nbsp;of a tree is equal to the number of nodes&nbsp;<strong><em>(N)</em></strong>&nbsp;minus one, so&nbsp;<strong><em>E = N - 1</em></strong>.</span></span></p>
+    <p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">To add a value if it is bigger you add it to the right of the node if it is smaller you add it to the left and repeat</span></p>
+    
+
+
+    <p><img alt="A tree with six nodes, numbered 1 to 6. Node 6 is the root node; nodes 1, 2, and 3 are leaves; and the tree has a height of 3, since 3 edges connect the root to its furthest leaf (6 to 5 to 4 to 1)." src="https://isaaccomputerscience.org/api/v3.2.0/api/images/content/computer_science/data_structures_and_algorithms/data_structures/figures/isaac_cs_dsa_data_struct_tree_structure.png" height="400px"/></p>
+    
+    <p>&nbsp;</p>
+    <br>
+	<br>
+    <p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:27px"><u>Binary Search Trees</u></span></span></p>
+
+
+    <p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">A special type of binary tree is a&nbsp;<strong>binary search tree</strong>, which is ordered to optimise searching. You can find out more about the binary search tree algorithm&nbsp;<a href="https://isaaccomputerscience.org/concepts/dsa_search_bst">here</a>.</span></span></p>
+
+    <p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">A binary search tree is a&nbsp;<a href="https://isaaccomputerscience.org/concepts/dsa_datastruct_tree">rooted tree</a>&nbsp;where the nodes of the tree are ordered. If the order is ascending (low to high), the nodes of the left subtree have values that are lower than the root, and the nodes of the right subtree have values that are higher than the root. This property is true for any node of the tree; the nodes of its left subtree will have values that are lower, and the nodes of its right subtree will have values that are higher.</span></span></p>
+
+    <p><img alt="A binary search tree with nine nodes, labelled A–I. F is the root node. The children of F are B and G. The children of B are A and D. The children of D are C and E. G has a single child I. I has a single child H." src="https://isaaccomputerscience.org/api/v3.2.0/api/images/content/computer_science/data_structures_and_algorithms/data_structures/figures/isaac_cs_dsa_data_struct_lettered_tree.png" height="400px" /></p>
+
+    <p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">A binary search tree (BST) is a&nbsp;<a href="https://isaaccomputerscience.org/concepts/dsa_datastruct_tree">rooted tree</a>&nbsp;where the nodes of the tree are ordered. If the order is ascending (low to high), the nodes of the left subtree have values that are lower than the root, and the nodes of the right subtree have values that are higher than the root. This property is true for any node of the tree; the nodes of its left subtree will have values that are lower, and the nodes of its right subtree will have values that are higher.</span></span></p>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Consider the following example of a binary search tree as shown in&nbsp;<strong>Figure&nbsp;1</strong>.</span></span></p>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive"><img alt="A binary search tree made up of the above data. 8 is the root node, which branches to 3 and 10; 3 branches to 1 (a leaf) and 6; 6 branches to 5 and 7 (leaves); 10 branches to 18; 18 branches to 12 (a leaf)." src="https://isaaccomputerscience.org/api/v3.2.0/api/images/content/computer_science/data_structures_and_algorithms/searching/figures/isaac_cs_dsa_search_binary_tree.png" height="400px"/></span></span></p>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive"><strong>Figure 1:</strong>&nbsp;Binary search tree</span></span></p>
+
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Imagine that you are searching for the number&nbsp;12,12:</span></span></p>
+
+<ul>
+	<li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Start at the root&nbsp;8,8;</span></span></li>
+	<li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Compare&nbsp;12,12&nbsp;with&nbsp;8,8;&nbsp;12,12&nbsp;is higher, so check the right child</span></span></li>
+	<li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Compare&nbsp;12,12&nbsp;with&nbsp;10,10;&nbsp;12,12&nbsp;is higher, so check the right child</span></span></li>
+	<li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Compare&nbsp;12,12&nbsp;with&nbsp;18,18;&nbsp;12,12&nbsp;is lower, so check the left child</span></span></li>
+	<li><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Compare&nbsp;12,12&nbsp;with&nbsp;12,12; success!</span></span></li>
+</ul>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive"><strong>You have found the item with four comparisons</strong>.</span></span></p>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Observe that at each comparison, you are sent left or right, and therefore the values in the other subtree do not need to be searched. This is similar to the approach taken in a&nbsp;<a href="https://isaaccomputerscience.org/concepts/dsa_search_binary">binary search</a>. However, to be as efficient as a binary search, the tree must be&nbsp;<strong>balanced</strong>:</span></span></p>
+
+<ul>
+	<li>
+	<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">In a&nbsp;<strong>balanced</strong>&nbsp;tree, every leaf (a node at the end of a branch) is around the same distance away from the root as any other leaf. In this case, the binary tree search algorithm is as efficient as the binary search.</span></span></p>
+	</li>
+	<li>
+	<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">In an&nbsp;<strong>unbalanced</strong>&nbsp;tree, one or more leaves is much further away from the root than another leaf. In this case, the binary tree search algorithm is less efficient than the binary search.</span></span></p>
+	</li>
+</ul>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">Notice that for a tree to be balanced, it does not have to have the same number of nodes in the left and right subtrees. The important thing is that each branch (from root to leaf) is roughly the same&nbsp;<strong>height</strong>. The height of a branch will determine the maximum number of comparisons that could be carried out when searching that branch of the tree.</span></span></p>
+
+<p><span style="font-size:18px"><span style="font-family:Comic Sans MS,cursive">In the example above, there are four leaf nodes. There are three edges between the root and each of the the nodes with values&nbsp;5,5,&nbsp;7,7&nbsp;and&nbsp;12,12. Although the remaining branch has only two edges (between the root and the node with value&nbsp;1,1), this tree can be considered balanced. Trees can get unbalanced when nodes are added or deleted and so will need to be rebalanced to optimise search performance.</span></span></p>
+<br>
+<br>
+<p><span style="font-size:27px"><u><span style="font-family:Comic Sans MS, cursive">Binary Search Tree Algorithm</span></u></span></p>
+<br>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">The pseudocode shown is a typical example of a binary tree search algorithm.</span></span></p>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">The algorithm, returns&nbsp;<code>True</code>&nbsp;if the value is found and&nbsp;<code>False</code>&nbsp;if the value is not found. It is a&nbsp;<a href="https://isaaccomputerscience.org/concepts/prog_recurs_standard#search_tree">recursive</a>&nbsp;algorithm and it takes two arguments:</span></span></p>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node</code>&nbsp;which is the current node being examined</span></span></li>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>search_item</code>&nbsp;which is the item being searched for</span></span></li>
+</ul>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">As the data is stored in a tree, we refer to each element as a node rather than an item (as in a list). The node is a structure that contains:</span></span></p>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>data</code>&nbsp;which in this case is a simple value attached to the node</span></span></li>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>right</code>&nbsp;which is a reference to the&nbsp;<strong>node to the right</strong>&nbsp;of the node</span></span></li>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>left</code>&nbsp;which is a reference to the&nbsp;<strong>node to the left</strong>&nbsp;of the node</span></span></li>
+</ul>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">For example, if we examined the root node:</span></span></p>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node.data</code>&nbsp;would be&nbsp;8,8</span></span></li>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node.right</code>&nbsp;would return a reference to the node that contained the data value&nbsp;3,3</span></span></li>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node.left</code>&nbsp;would return a reference to the node that contained the data value10,10</span></span></li>
+</ul>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">If there is no node to the right,&nbsp;<code>node.right</code>&nbsp;will contain a&nbsp;<code>Null</code>&nbsp;value; if there is no node to the left,&nbsp;<code>node.left</code>&nbsp;will contain a&nbsp;<code>Null</code>&nbsp;value.</span></span></p>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">Pseudocode</span></span></li>
+</ul>
+
+<pre>
+<code>FUNCTION search(node, search_item)
+
+    // Base case for recursion:
+    // The recursion will stop if the search item has been found
+    IF search_item == node.data THEN
+        RETURN True
+
+    // Check if the search item is greater than the node data
+    // and there is another node to the right to check
+    ELSEIF search_item &gt; node.data AND node.right != Null THEN
+        RETURN search(node.right, search_item)
+
+    // Check if the search item is less than the node data
+    // and there is another node to the left to check
+    ELSEIF search_item &lt; node.data AND node.left != Null THEN
+        RETURN search(node.left, search_item)
+
+    // Otherwise the search item does not exist
+    ELSE
+        RETURN False
+    ENDIF
+ENDFUNCTION</code></pre>
+
+<h4>&nbsp;</h4>
+<br>
+<br>
+<h4><span style="font-family:Comic Sans MS,cursive"><span style="font-size:27px">Tracing the algorithm using a trace table</span></span></h4>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">When asked to trace a recursive algorithm, you may be given a trace table to fill in or you can draw your own. In the example below, you are searching for the node with the value&nbsp;6,6.</span></span></p>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">When tracing a recursive algorithm you must remember that there will be more than one version of the subroutine active (i.e. on the call stack) at one time, and each will have its own local data. There may also be shared data. In this example, the tree data and the value of&nbsp;<code>search_item</code>&nbsp;will remain constant throughout, but the value of&nbsp;<code>node</code>&nbsp;will change.</span></span></p>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">Whether you use a trace table or boxes, it is really useful to number the lines of code. This will allow you to keep track of where you need to return to as each version of the subroutine completes.</span></span></p>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">The&nbsp;<strong>first</strong>&nbsp;time that the subroutine is called:</span></span>
+
+	<ul>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node</code>&nbsp;points to the item whose data value is&nbsp;8,8</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">this is&nbsp;<strong>higher</strong>&nbsp;than&nbsp;<code>search_item</code>&nbsp;and a left node exists, so the subroutine is called again from line 7 with the pointer for the left node.</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">On the&nbsp;<strong>second</strong>&nbsp;call:</span></span>
+
+	<ul>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node</code>&nbsp;points to the item whose data value is&nbsp;3,3</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">this is&nbsp;<strong>lower</strong>&nbsp;than&nbsp;<code>search_item</code>&nbsp;and a right node exists, so the subroutine is called again from line 5 with the pointer for the right node.</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">On the&nbsp;<strong>third</strong>&nbsp;call:</span></span>
+
+	<ul>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node</code>&nbsp;points to the item whose data value is&nbsp;6,6</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">this matches the&nbsp;<code>search_item</code>&nbsp;and a right node exists, so the value&nbsp;<code>True</code>&nbsp;is returned from line 3</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">the third version of the subroutine has completed and will be removed from the call stack.</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">The&nbsp;<strong>second</strong>&nbsp;call will resume on line 5:</span></span>
+
+	<ul>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">where it receives the returned value (<code>True</code>)</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">and returns &#39;True&#39; to the still open first call</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">the second version of the subroutine has completed and will be removed from the call stack.</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<ul>
+	<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">The&nbsp;<strong>first</strong>&nbsp;call will resume on line 7:</span></span>
+
+	<ul>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">where it receives the returned value (<code>True</code>)</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">and returns &#39;True&#39; (as the final answer)</span></span></li>
+		<li><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">the first version of the subroutine has completed and will be removed from the call stack.</span></span></li>
+	</ul>
+	</li>
+</ul>
+
+<table>
+	<tbody>
+		<tr>
+			<th><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><strong>call</strong></span></span></th>
+			<th><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><code>node</code></span></span></th>
+			<th><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><strong>return value</strong></span></span></th>
+		</tr>
+		<tr>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">1,1</span></span></td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">8,8</span></span></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">2,2</span></span></td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">3,3</span></span></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">3,3</span></span></td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">6,6</span></span></td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">True</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">2,2</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">True</span></span></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">1,1</span></span></td>
+			<td>&nbsp;</td>
+			<td><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">True</span></span></td>
+		</tr>
+	</tbody>
+</table>
+<br>
+<br>
+<h1><span style="font-family:Comic Sans MS,cursive"><span style="font-size:27px">Tracing the algorithm using boxes</span></span></h4>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">You may find it easier to trace a recursive algorithm using boxes to record the information for each call of the subroutine. In the example below, right arrows are used to show where a call is made and left arrows are used to show the return values. Each box is labelled with the key information for that instance of the subroutine.</span></span></p>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px">If you prefer this method of tracing, but are asked to complete a trace table, you can transcribe the values to the table once you have completed the trace.</span></span></p>
+
+<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><img alt="An example of tracing a binary tree search algorithm using boxes" src="https://isaaccomputerscience.org/api/v3.2.0/api/images/content/computer_science/data_structures_and_algorithms/searching/figures/isaac_cs_dsa_search_tracing_binary_tree_boxes.svg" height="400px"/></span></span></p>
+
+<br>
+<br>
+<h4><span style="font-family:Comic Sans MS,cursive"><span style="font-size:27px">TRAVERSALS</span></span></h4><br>
+	<h3><span style="font-family:Comic Sans MS,cursive"><span style="font-size:20px">In Order, Pre Order, Post Order</span></span></h3>
+	<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><img alt="traversals" src="https://us-east-1.tixte.net/uploads/frank.wants.solutions/BinaryTreeTraversals.png" height="400px"/></span></span></p>
+	<p><span style="font-family:Comic Sans MS,cursive"><span style="font-size:18px"><img alt="traversals" src="https://us-east-1.tixte.net/uploads/frank.wants.solutions/BinaryTreeTraversals2.png" height="300px"/></span></span></p>
+
+	<img src = "bobbyyoung.png" class="center"/>
+</html>
