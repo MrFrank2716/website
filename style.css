@@ -387,3 +387,15 @@ body {
 .icon-strikethrough {
     fill: var(--red);
 }
+
+.ball {
+	background: #fff;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	mix-blend-mode: difference;
+}

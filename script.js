@@ -1,65 +1,35 @@
-const wrapper = document.getElementById("tiles");
+const ball = document.querySelector('.ball');
 
-let columns = 0,
-    rows = 0,
-    toggled = false;
+let mouseX = 0;
+let mouseY = 0;
 
-const toggle = () => {
-  toggled = !toggled;
-  
-  document.body.classList.toggle("toggled");
+let ballX = 0;
+let ballY = 0;
+
+let speed = 0.1;
+
+// Update ball position
+function animate() {
+	//Determine distance between ball and mouse
+	let distX = mouseX - ballX;
+	let distY = mouseY - ballY;
+	
+	// Find position of ball and some distance * speed
+	ballX = ballX + (distX * speed);
+	ballY = ballY + (distY * speed);
+	
+	ball.style.left = ballX + "px";
+	ball.style.top = ballY + "px";
+	
+	requestAnimationFrame(animate);
 }
+animate();
 
-const handleOnClick = index => {
-  toggle();
-  
-  anime({
-    targets: ".tile",
-    opacity: toggled ? 0 : 1,
-    delay: anime.stagger(50, {
-      grid: [columns, rows],
-      from: index
-    })
-  });
-}
-
-const createTile = index => {
-  const tile = document.createElement("div");
-  
-  tile.classList.add("tile");
-  
-  tile.style.opacity = toggled ? 0 : 1;
-  
-  tile.onclick = e => handleOnClick(index);
-  
-  return tile;
-}
-
-const createTiles = quantity => {
-  Array.from(Array(quantity)).map((tile, index) => {
-    wrapper.appendChild(createTile(index));
-  });
-}
-
-const createGrid = () => {
-  wrapper.innerHTML = "";
-  
-  const size = document.body.clientWidth > 800 ? 100 : 50;
-  
-  columns = Math.floor(document.body.clientWidth / size);
-  rows = Math.floor(document.body.clientHeight / size);
-  
-  wrapper.style.setProperty("--columns", columns);
-  wrapper.style.setProperty("--rows", rows);
-  
-  createTiles(columns * rows);
-}
-
-createGrid();
-
-window.onresize = () => createGrid();
-
-
+// Move ball with cursor
+document.addEventListener("mousemove", function(event) {
+	mouseX = event.pageX;
+	mouseY = event.pageY;
+});
 
 
 
