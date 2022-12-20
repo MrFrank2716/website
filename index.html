@@ -32,6 +32,7 @@
   <link href="https://d2pas86kykpvmq.cloudfront.net/css/normalize.css?versionId=l.8LT1pdblerE9zhkEePyTu2LXNNQXeW" rel="stylesheet" type="text/css"/>
   <link href="css/website.css" rel="stylesheet" type="text/css"/>
   <link href="css/glossy.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
   
   <style>
 	figcaption {
@@ -47,15 +48,31 @@
   <link href="https://imgur.com/oPd9r7E.png" rel="apple-touch-icon">
 </head>
 
-<body style="overflow-x: hidden;" style="background-color: black;">
+<body class="loaded" style="overflow-x: hidden;" style="background-color: black;">
   <!-- Hey Frank Don't Remove me -->
   <div id="app" v-cloak>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W28MLZ8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-
+<div class="p1">
+	<div class="pl__outer-ring"></div>
+	<div class="pl__inner-ring"></div>
+	<div class="pl__track-cover"></div>
+	<div class="pl__ball">
+		<div class="pl__ball-texture"></div>
+		<div class="pl__ball-outer-shadow"></div>
+		<div class="pl__ball-inner-shadow"></div>
+		<div class="pl__ball-side-shadows"></div>
+	</div>
+</div>
 
 <div class="wf-section">
+    <div id="loader-wrapper">
+      <div id="loader"></div>
+ 
+      <div class="loader-section section-left"></div>
+      <div class="loader-section section-right"></div> 
+    </div>
     <div data-w-id="4a7764f7-b347-a058-0c9f-9d1a1b90fb1e" class="hero-bg">
       
       <div class="_1500-wrapper">
