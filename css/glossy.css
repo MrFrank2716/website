@@ -236,6 +236,16 @@ body {
   text-decoration: none;
 }
 
+.btn.queen.access {
+  height: 60px;
+  margin-top: 50px;
+  padding-right: 31px;
+  padding-left: 31px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7851a9), to(#7851a9));
+  background-image: linear-gradient(90deg, #7851a9, #7851a9);
+  text-decoration: none;
+}
+
 .text-body-2 {
   font-family: Ppfragment, sans-serif;
   color: #fff;
@@ -2723,3 +2733,5 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+btn access w-inline-block

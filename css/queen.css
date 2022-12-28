@@ -1,0 +1,75 @@
+html, .qbody {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.qbody {
+	background-color: #000000;
+}
+
+.qwrapper {
+	font-family: "Raleway", Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: #ffffff;
+	text-align: center;
+	padding: 50px 30px 100px;
+}
+
+.qh1 {
+	font-family: "Rufina", Georgia, serif;
+	font-weight: normal;
+	font-size: 3em;
+	margin-right: auto;
+	margin-left: auto;
+  	max-width: 800px;
+}
+
+.qp {
+	font-size: 1.25em;
+	line-height: 1.75em;
+	position: relative;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 800px;
+ 	word-wrap: break-word;
+}
+
+.qdate {
+	display: block;
+	font-size: 0.9em;
+}
+
+.qcrest {
+	width: 100px;
+}
+
+.qsemi-bold {
+	font-weight: 600;
+}
+
+.qsmall-text {
+	font-size: 1em;
+	position: relative;
+}
+
+.qimg {
+	max-width: 100%;
+}
+
+.qhr {
+	background: #7f7f7f;
+	height: 1px;
+	border: 0;
+	width: 860px;
+	max-width: 90%;
+	margin: 2em auto 1em;
+}
+.qmobile-margin {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}

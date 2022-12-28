@@ -168,55 +168,9 @@
 
 
 * {
-	cursor: none;
+	cursor: show;
 }
 
 ::selection {
 	user-select: none;
-}
-
-
-/* REQUIRED / besides position, pointer-events, transform, and transition, the rest are customizable styling */
-.small {
-	height: 10px;
-	width: 10px;
-	background-color: var(#62Ba9B);
-	border-radius: 10px;
-	filter: drop-shadow(0 0 5px var(#62Ba9B)) drop-shadow(0 0 20px var(#62Ba9B));
-	
-	position: fixed;
-	pointer-events: none;
-	transform: translate(-50%, -50%);
-	transition: height 0.2s, width 0.2s;
-}
-  
-  /* REQUIRED / besides position, pointer-events, transform, and transition, the rest are customizable styling */
-.big {
-	height: 50px;
-	width: 50px;
-	border: 3px solid var(#62Ba9B);
-	border-radius: 100px;
-	filter: drop-shadow(0 0 5px var(#62Ba9B)) drop-shadow(0 0 20px var(#62Ba9B));
-	
-	position: fixed;
-	pointer-events: none;
-	transform: translate(calc(-50%), -50%);
-	transition: height 0.5s, width 0.5s, filter 0.5s;
-}
-  
-  /* REQUIRED / some styling is necessary for hover effect */
-.hover__big {
-	height: 100px;
-	width: 100px;
-	filter: drop-shadow(0 0 5px var(#62Ba9B)) drop-shadow(0 0 20px var(#62Ba9B)) drop-shadow(0 0 40px var(#62Ba9B));
-	
-	transition: height 0.5s, width 0.5s, filter 0.5s;
-}
-  
-  /* REQUIRED / some styling is necessary for hover effect */
-.hover__small {
-	height: 8px;
-	width: 8px;
-	
-	transition: height 0.2s, width 0.2s;
 }
